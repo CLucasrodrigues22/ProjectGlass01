@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300&display=swap');
+@font-face{
+	src: url("../_fonts/BubblegumSans-Regular.ttf");
+	font-family: 'FonteLogo';
+}
+body{
+	background-color: #dddddd;
+  font-family: sans-serif;
+}
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+a {
+  color: #606060;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* FOMATAÇAO DE INTERFACE*/
+
+div#interface {
+	width: 900px;
+	background-color: #ffffff;
+	margin: -20px auto 10px auto;
+	box-shadow: 0px 0px 10px black;
+	padding: 10px;
+}
+
+/* FOMATAÇAO DO OCULOS NA INTERFACE*/
+
+header#cabecalho img#icone{
+  position: absolute;
+  left: 73%;
+  top: 77px;
+}
+
+/* CABEÇALHO NO INICIO DO SITE com imagem*/
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background: url('../_imagens/glass-logo-peq.jpg') no-repeat 0px 80px;
+}
+
+/* CABEÇALHO OS 2 PRIMEIROS TITULOS*/
+
+header#cabecalho h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+	padding: 0px;
+	margin-bottom: 0px; 
+}
+header#cabecalho h2 {
+	font-family: 'Titillium Web', sans-serif;
+	color: #888888;
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+/* FOMATAÇAO DE IMAGENS COM LEGENDAS*/
+/*_imagens/glass-quadro-homem-mulher.jpg"*/
+
+figure.foto-legenda {
+  position: relative;
+  border: 8px solid white;
+  box-shadow: 1px 1px 4px black;
+}
+        
+figure.foto-legenda img {
+  width: 100%;
+  height: 50%;
+}
+figure.foto-legenda figcaption{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0,.4);
+  color: white;
+  width: 100%;
+  height:100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption {
+	opacity: 1;
+}
+
+/* FOMATAÇAO DE IMAGENS TERMINA LEGENDAS*/
+/*_imagens/glass-quadro-homem-mulher.jpg"*/
+
+nav#menu {
+	display: block;
+  /* fazer o menu ficar na posicao correta */
+}
+
+/* FOMATACÃO DO MENU caxinhas de clicar*/
+
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 480px;
+}
+
+/* FOMATACÃO DO MENU para ficar em cima do site na horizontal*/
+
+nav#menu li {
+	display: inline-block;
+	background-color: #bbbbbb;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+
+/* fazer efeito de mudar a cor quando passar o mouse */
+
+nav#menu li:hover {
+	background-color: #606060;
+
+}
+
+/* ESCONDER O H1 DO MENU*/
+
+nav#menu h1 {
+	display: none;
+}
+
+/* FOMATAR OS LINKS*/
+
+nav#menu a {
+	color: #000000;
+	text-decoration: none;
+}
+
+/* fazer efeito de 1s  H1 DO MENU*/
+
+nav#menu a:hover {
+	color: #ffffff;
+}
+
+/* CONFIGURAÇAO DA SECTION PRINCIPAL CORPO*/
+
+section#corpo {
+	display: block;
+	width: 500px;
+	float: left;
+  	border-right: 1px solid #606060;
+  	padding-right: 15px;
+}
+
+/*Configuração do article "noticiaprincipal" todos os h2*/
+
+article#noticiaprincipal h2 {
+  font-size: 13pt;
+  color: #606060;
+  background-color: #dddddd;
+  padding: 5px 0px 5px 10px;
+  margin: 10px 0px 10px 0px;
+}
+
+/*Configuração do article "cabecalhoartigo" todos os h1*/
+
+header#cabecalhoartigo h1 {
+  font-family: 'FonteLogo', sans-serif;
+  font-size: 20pt;
+  color: #606060; 
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/*Configuração do article "cabecalhoartigo" todos os h2*/
+
+header#cabecalhoartigo h2 {
+  font-size: 13pt;
+  color: #cecece;
+  background-color: #ffffff;
+  margin: 0px;
+}
+
+/*Configuração do article "cabecalhoartigo" todos os h3*/
+
+header#cabecalhoartigo h3 {
+  font-size: 12px;
+  color: #606060;
+}
+.direita {
+  text-align: right;
+}
+
+/*Configuração da tabela de especificações*/
+
+table#tabelaspec {
+  border: 1px solid #606060;
+  border-spacing: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  	
+}
+
+/*Configuração para as td da tabela*/
+
+table#tabelaspec td {
+  border: 1px solid #606060;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+table#tabelaspec td.ce {
+  /*configuração de palavras na coluna da esquerda*/
+  color: #ffffff;
+  background-color: #606060;
+  vertical-align: top;
+  font-weight: bold;
+  text-align: right;
+}
+table#tabelaspec td.cd {
+  /*configuração de palavras na coluna da direita*/
+  background-color: #cecece;
+
+}
+
+/*Configuração do caption "Tabela Técnica do Google Glass Jul/2019"*/
+
+table#tabelaspec caption {
+  color: #888888;
+  font-size: 15pt;
+  font-weight: bolder;
+}
+
+/*Configuração do jul 2019*/
+
+table#tabelaspec caption span.mar{
+  display:block;
+  float:right;
+  color:#000000;
+  font-size:8pt;
+  margin-top:10px;
+}
+
+/** Configuração do video da seção corpo**/
+
+section#corpo video#filme01 {
+	width: 500px;
+}
+
+/* CONFIGURAÇAO DA ASIDE LATERAL CORPO*/
+
+aside#lateral {
+	display: block;
+	width: 350px;
+	float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5)
+}
+aside#lateral h1 {
+  font-family: 'FonteLogo', sans-serif;
+  font-size: 20pt;
+  color: #606060;
+  margin-top: 0px;
+}
+aside#lateral h2 {
+  background-color: #606060;
+  font-size: 13pt;
+  color: #ffffff;
+  padding: 5px;
+}
+aside#lateral video#filme02 {
+	width: 350px;
+	margin-bottom: auto;
+	margin-top: auto;
+}
+
+/* CONFIGURAÇAO DA footer rodape CORPO*/
+
+footer#rodape {
+  clear: both;
+  border-top: 1px solid #606060;
+}
+
+/*Configuração dos paragrafos do rodapé*/
+
+footer#rodape p {
+  text-align: center;
+  list-style: none;
+}
